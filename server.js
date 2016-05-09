@@ -11,6 +11,12 @@ app.set('view engine', 'handlebars');
 app.get('/', function(req, res){
   res.render('index');
 });
+app.get('/register', function(req, res){
+  res.render('register');
+});
+app.get('/login', function(req, res){
+  res.render('login');
+});
 
 app.listen(PORT, function(){
   console.log("You are listening on:" , PORT)
